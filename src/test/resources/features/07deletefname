@@ -1,0 +1,6 @@
+Feature: Delete User by userFirstName
+
+  Scenario: Delete user by first name
+    Given user is created for deletion by firstName
+    When user is deleted using userFirstName
+    Then API should return status code 200 for userFirstName deletion
